@@ -123,8 +123,23 @@
   <data name="AboutMe" xml:space="preserve">
     <value>About Me</value>
   </data>
+  <data name="AboutMeLogisticsText" xml:space="preserve">
+    <value>I have extensive practical experience in designing end-to-end business workflows for logistics and warehouse management automation in large holding companies. I developed comprehensive modules for inter-branch inventory movement based on two-stage logic: shipping goods at internal transfer prices while retaining stock on the holding's balance sheet, automatically generating transit receipt drafts, and their final recognition on the end-destination branch warehouses. To ensure process security, I implemented flexible Role-Based Access Control (RBAC) models, restricting the privileges of line staff based on their authorized locations.</value>
+  </data>
+  <data name="AboutMeMainText" xml:space="preserve">
+    <value>A C# Developer with 12 years of extensive experience in enterprise development. I specialize in designing complex backend systems, building fault-tolerant integration solutions between the 1C ecosystem and external services, and deep performance optimization of relational databases. I possess a rare skill — detailed knowledge of the internal table structures and DBMS of 1C configurations (Trade Management, HR &amp; Payroll, Document Management), which allows me to calculate tables and build data selections directly via SQL queries, bypassing the heavy standard platform syntax.</value>
+  </data>
+  <data name="AboutMeMobileText" xml:space="preserve">
+    <value>In addition to backend development, I successfully design client-server mobile architectures using Flutter to automate field personnel operations (sales agents, transport logistics). I specialize in the Offline-first concept: I implemented guaranteed geodata delivery mechanisms where coordinates are buffered in the smartphone's local database when connection is lost, sent in batches to the server via SignalR / REST API once connection is restored, then validated with a successful delivery flag (send = true), and automatically cleared to prevent device storage overflow.</value>
+  </data>
+  <data name="AboutMeSubtitle" xml:space="preserve">
+    <value>A brief look at my development journey</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="ContactDirectly" xml:space="preserve">
+    <value>Contact directly</value>
   </data>
   <data name="ContactMe" xml:space="preserve">
     <value>Contact Me</value>
@@ -150,11 +165,29 @@
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="Italian" xml:space="preserve">
+    <value>Italian</value>
+  </data>
   <data name="Kyrgyz" xml:space="preserve">
     <value>Kyrgyz</value>
   </data>
+  <data name="LangFluent" xml:space="preserve">
+    <value>fluent</value>
+  </data>
+  <data name="LangNative" xml:space="preserve">
+    <value>native</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Language</value>
+  </data>
+  <data name="LanguagesTitle" xml:space="preserve">
+    <value>Language Proficiency</value>
+  </data>
+  <data name="LangUpperInter" xml:space="preserve">
+    <value>upper-intermediate</value>
+  </data>
+  <data name="LetWorkTogether" xml:space="preserve">
+    <value>Let's work together!</value>
   </data>
   <data name="Message" xml:space="preserve">
     <value>Message</value>
@@ -185,5 +218,110 @@
   </data>
   <data name="Title" xml:space="preserve">
     <value>Urmat Alikeev | C# Developer</value>
+  </data>
+  <data name="DescTitle" xml:space="preserve">
+    <value>Desktop Application</value>
+  </data>
+  <data name="WpfMainDesc" xml:space="preserve">
+    <value>A corporate Windows client for real-time operational warehouse management.</value>
+  </data>
+  <data name="Interface" xml:space="preserve">
+    <value>Interface</value>
+  </data>
+  <data name="WpfUiDesc" xml:space="preserve">
+    <value>Responsive UI development using the MVVM pattern and custom styles.</value>
+  </data>
+  <data name="WpfDataBindingDesc" xml:space="preserve">
+    <value>Optimization of large product list rendering and dynamic data updates.</value>
+  </data>
+  <data name="DataBinding" xml:space="preserve">
+    <value>Data Binding</value>
+  </data>
+  <data name="FullstackWebTitle" xml:space="preserve">
+    <value>Full-Stack Web Application</value>
+  </data>
+  <data name="FullstackMainDesc" xml:space="preserve">
+    <value>A modern SPA application for corporate internal business process automation.</value>
+  </data>
+  <data name="Frontend" xml:space="preserve">
+    <value>Frontend</value>
+  </data>
+  <data name="FrontendDesc" xml:space="preserve">
+    <value>Reactive and component-driven user interface built with Vue.js and state management.</value>
+  </data>
+  <data name="BackendDesc" xml:space="preserve">
+    <value>A fault-tolerant REST API built with C#, providing fast request processing.</value>
+  </data>
+  <data name="Backend" xml:space="preserve">
+    <value>Backend</value>
+  </data>
+  <data name="GpsTrackerTitle" xml:space="preserve">
+    <value>Flutter GPS Tracker: Logistics</value>
+  </data>
+  <data name="GpsTrackerMainDesc" xml:space="preserve">
+    <value>A mobile application for personnel and transport tracking with a strong focus on stability in areas with no connectivity.</value>
+  </data>
+  <data name="OfflineFirstDesc" xml:space="preserve">
+    <value>Buffering of coordinates in the smartphone's local database when network connectivity is unavailable.</value>
+  </data>
+  <data name="SmartSync" xml:space="preserve">
+    <value>Smart Synchronization</value>
+  </data>
+  <data name="SmartSyncDesc" xml:space="preserve">
+    <value>Batch data transmission upon network restoration and automatic memory cleanup.</value>
+  </data>
+  <data name="MyWarehouseTitle" xml:space="preserve">
+    <value>My Warehouse</value>
+  </data>
+  <data name="ErpSystem" xml:space="preserve">
+    <value>ERP System</value>
+  </data>
+  <data name="WarehouseAutomationDesc" xml:space="preserve">
+    <value>...for warehouse accounting, inter-branch logistics, and supply chain automation.</value>
+  </data>
+  <data name="PurchasingTitle" xml:space="preserve">
+    <value>Purchasing</value>
+  </data>
+  <data name="ProcurementDesc" xml:space="preserve">
+    <value>End-to-end procurement workflow (order creation, "In Transit" status, stock receiving).</value>
+  </data>
+  <data name="Logistics" xml:space="preserve">
+    <value>Logistics</value>
+  </data>
+  <data name="LogisticsDesc" xml:space="preserve">
+    <value>Two-stage inventory movement between the holding and branches at internal transfer prices.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="SecurityDesc" xml:space="preserve">
+    <value>Role-Based Access Control (RBAC) for sales and warehouse management.</value>
+  </data>
+  <data name="1cDevelopmentTitle" xml:space="preserve">
+    <value>1C Development &amp; Support</value>
+  </data>
+  <data name="1cMainDesc" xml:space="preserve">
+    <value>Architecture design and deep customization of non-standard configurations for large enterprises.</value>
+  </data>
+  <data name="Контуры автоматизации" xml:space="preserve">
+    <value>Automation Scope</value>
+  </data>
+  <data name="1cModulesDesc" xml:space="preserve">
+    <value>Implementation of complex modules in 1C:Trade Management, 1C:HR &amp; Payroll, and 1C:Document Management.</value>
+  </data>
+  <data name="CodeOptimization" xml:space="preserve">
+    <value>Code Optimization</value>
+  </data>
+  <data name="1cOptimizationDesc" xml:space="preserve">
+    <value>Refactoring of heavy algorithms, customization of DCS (Data Composition System) reports and business workflows.</value>
+  </data>
+  <data name="DevelopedProjects" xml:space="preserve">
+    <value>Real-world projects I have developed</value>
+  </data>
+  <data name="Integration1cNetTitle" xml:space="preserve">
+    <value>1C ↔ .NET Integration</value>
+  </data>
+  <data name="IntegrationMainDesc" xml:space="preserve">
+    <value>Development of REST API and high-load data exchange architecture (Online/Offline) between 1C:TM, 1C:HR&amp;Payroll, and .NET. Optimization of heavy queries at the DBMS level.</value>
   </data>
 </root>

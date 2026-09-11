@@ -123,8 +123,23 @@
   <data name="AboutMe" xml:space="preserve">
     <value>Мен жөнүндө</value>
   </data>
+  <data name="AboutMeLogisticsText" xml:space="preserve">
+    <value>Ири холдингдердин логистикасын жана складдык эсебин автоматташтыруу үчүн учтан-учка (end-to-end) бизнес-чынжырчаларды долбоорлоодо бай практикалык тажрыйбам бар. Товардык-материалдык баалуулуктарды (ТМБ) филиалдар аралык которуунун татаал, эки этаптуу логикага негизделген модулдарын иштеп чыккам: товарларды холдингдин балансында калдыктарын сактоо менен ички баалар боюнча жөнөтүү, транзиттик кириш черновиктерин автоматтык түрдө генерациялоо жана аларды филиалдардын акыркы складдарына биротоло кириштөө (оприходование). Процесстердин коопсуздугун камсыз кылуу үчүн, сызыктуу кызматкерлердин укуктарын алар кире алган локациялардын деңгээлинде чектеген ийкемдүү ролдук кирүү моделдерин (RBAC) киргизгем.</value>
+  </data>
+  <data name="AboutMeMainText" xml:space="preserve">
+    <value>Ишкана деңгээлиндеги (enterprise) иштеп чыгууга 12 жыл бою терең сүңгүгөн тажрыйбасы бар C# иштеп чыгуучусумун. Мен татаал бэкенд тутумдарын долбоорлоого, 1С экотутуму менен тышкы кызматтардын ортосунда каталарга туруктуу интеграциялык чечимдерди түзүүгө, ошондой эле реляциялык маалыматтар базаларынын өндүрүмдүүлүгүн терең оптималдаштырууга адистешкенмин. Менде сейрек кездешүүчү көндүм бар — 1С конфигурацияларынын (УТ, ЗУП, Документооборот) МББТ (СУБД) жана ички таблицаларынын структурасын деталдуу билүү. Бул мага платформанын оор стандарттуу синтаксисин айланып өтүп, SQL сурамдары аркылуу түз эле таблицаларды эсептөөгө жана маалыматтарды тандап алууга мүмкүндүк берет.</value>
+  </data>
+  <data name="AboutMeMobileText" xml:space="preserve">
+    <value>Бэкендди иштеп чыгуудан сырткары, талаа кызматкерлерин (соода агенттери, транспорттук логистика) автоматташтыруу үчүн Flutter платформасында кардар-сервердик (client-server) мобилдик архитектураларды ийгиликтүү долбоорлойм. Offline-first концепциясы боюнча адистешем: тармак жок болгон учурда координаттар смартфондун локалдык маалымат базасында буферге алынып, байланыш калыбына келгенде SignalR / REST API аркылуу серверге пакеттер менен жөнөтүлүүчү, андан соң ийгиликтүү жөнөтүү желекчеси (send = true) менен текшерилип, түзүлүштөрдүн эс тутумунун толуп кетишин алдын алуу үчүн автоматтык түрдө тазалануучу геомаалыматтарды кепилдеп жеткирүү механизмдерин ишке ашыргам.</value>
+  </data>
+  <data name="AboutMeSubtitle" xml:space="preserve">
+    <value>Менин иштеп чыгуучулук жолум тууралуу кыскача</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Байланыш</value>
+  </data>
+  <data name="ContactDirectly" xml:space="preserve">
+    <value>Түз байланышуу</value>
   </data>
   <data name="ContactMe" xml:space="preserve">
     <value>Байланышуу</value>
@@ -150,11 +165,29 @@
   <data name="Home" xml:space="preserve">
     <value>Башкы бет</value>
   </data>
+  <data name="Italian" xml:space="preserve">
+    <value>Итальян тили</value>
+  </data>
   <data name="Kyrgyz" xml:space="preserve">
     <value>Кыргызча</value>
   </data>
+  <data name="LangFluent" xml:space="preserve">
+    <value>эркин сүйлөйм</value>
+  </data>
+  <data name="LangNative" xml:space="preserve">
+    <value>эне тилим</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Тил</value>
+  </data>
+  <data name="LanguagesTitle" xml:space="preserve">
+    <value>Тилдерди билем</value>
+  </data>
+  <data name="LangUpperInter" xml:space="preserve">
+    <value>ортодон жогору</value>
+  </data>
+  <data name="LetWorkTogether" xml:space="preserve">
+    <value>Биргелешип иштейли! </value>
   </data>
   <data name="Message" xml:space="preserve">
     <value>Билдирүү</value>
@@ -185,5 +218,110 @@
   </data>
   <data name="Title" xml:space="preserve">
     <value>Аликеев Урмат  | C# разработчик</value>
+  </data>
+  <data name="DescTitle" xml:space="preserve">
+    <value>Десктоп тиркемеси</value>
+  </data>
+  <data name="WpfMainDesc" xml:space="preserve">
+    <value>Складдык процесстерди реалдуу убакыт режиминде ыкчам башкаруу үчүн корпоративдик Windows кардары.</value>
+  </data>
+  <data name="Interface" xml:space="preserve">
+    <value>Колдонуучу интерфейси</value>
+  </data>
+  <data name="WpfUiDesc" xml:space="preserve">
+    <value>MVVM үлгүсүн (паттерн) жана кастомдук стилдерди колдонуу менен тез жооп берүүчү UI интерфейсин иштеп чыгуу.</value>
+  </data>
+  <data name="WpfDataBindingDesc" xml:space="preserve">
+    <value>Товарлардын чоң тизмелерин көрсөтүүнү жана маалыматтарды динамикалык түрдө жаңыртууну оптималдаштыруу.</value>
+  </data>
+  <data name="DataBinding" xml:space="preserve">
+    <value>Маалыматтарды байлоо</value>
+  </data>
+  <data name="FullstackWebTitle" xml:space="preserve">
+    <value>Fullstack веб-тиркемеси</value>
+  </data>
+  <data name="FullstackMainDesc" xml:space="preserve">
+    <value>Компаниянын ички бизнес-процесстерин автоматташтыруу үчүн заманбап SPA-тиркемеси.</value>
+  </data>
+  <data name="Frontend" xml:space="preserve">
+    <value>Фронтенд</value>
+  </data>
+  <data name="FrontendDesc" xml:space="preserve">
+    <value>Абалдарды башкаруу (state management) менен Vue.js платформасында реактивдүү жана компоненттүү интерфейсти иштеп чыгуу.</value>
+  </data>
+  <data name="BackendDesc" xml:space="preserve">
+    <value>Сурамдарды тез иштетүүнү камсыз кылган, C# тилиндеги каталарга туруктуу REST API.</value>
+  </data>
+  <data name="Backend" xml:space="preserve">
+    <value>Бэкенд</value>
+  </data>
+  <data name="GpsTrackerTitle" xml:space="preserve">
+    <value>Flutter GPS-Трекер: Логистика</value>
+  </data>
+  <data name="GpsTrackerMainDesc" xml:space="preserve">
+    <value>Байланыш жок аймактарда туруктуу иштөөгө басым жасалган, кызматкерлерди жана транспортту трекингдөө үчүн мобилдик тиркеме.</value>
+  </data>
+  <data name="OfflineFirstDesc" xml:space="preserve">
+    <value>Тармакта байланыш жок болгон учурда координаттарды смартфондун локалдык маалымат базасында буферге алуу (топтоо).</value>
+  </data>
+  <data name="SmartSync" xml:space="preserve">
+    <value>Акылдуу синхрондоштуруу</value>
+  </data>
+  <data name="SmartSyncDesc" xml:space="preserve">
+    <value>Байланыш пайда болгондо маалыматтарды пакет түрүндө жөнөтүү жана эс тутумду автоматтык түрдө тазалоо.</value>
+  </data>
+  <data name="MyWarehouseTitle" xml:space="preserve">
+    <value>Менин складым</value>
+  </data>
+  <data name="ErpSystem" xml:space="preserve">
+    <value>ERP-тутуму</value>
+  </data>
+  <data name="WarehouseAutomationDesc" xml:space="preserve">
+    <value>...складдык эсепти, филиалдар аралык логистиканы жана жеткирүү чынжырчаларын автоматташтыруу үчүн.</value>
+  </data>
+  <data name="PurchasingTitle" xml:space="preserve">
+    <value>Сатып алуулар</value>
+  </data>
+  <data name="ProcurementDesc" xml:space="preserve">
+    <value>Жеткирүүчүлөр менен иштөөнүн учтан-учка (сквозной) циклы (заказ берүү, «Жолдо» статусу, товарды кириштөө).</value>
+  </data>
+  <data name="Logistics" xml:space="preserve">
+    <value>Логистика</value>
+  </data>
+  <data name="LogisticsDesc" xml:space="preserve">
+    <value>Товарларды холдинг менен филиалдардын ортосунда ички баалар боюнча эки этаптуу которуу.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Коопсуздук</value>
+  </data>
+  <data name="SecurityDesc" xml:space="preserve">
+    <value>Сатууларды жана складдарды башкаруу үчүн ролдорго негизделген кирүү укуктарын чектөө (RBAC).</value>
+  </data>
+  <data name="1cDevelopmentTitle" xml:space="preserve">
+    <value>С иштеп чыгуу жана колдоо</value>
+  </data>
+  <data name="1cMainDesc" xml:space="preserve">
+    <value>Ири ишканалар үчүн типтүү эмес конфигурациялардын архитектурасын долбоорлоо жана терең иштеп чыгуу (доработка).</value>
+  </data>
+  <data name="Контуры автоматизации" xml:space="preserve">
+    <value>Автоматташтыруу багыттары</value>
+  </data>
+  <data name="1cModulesDesc" xml:space="preserve">
+    <value>1С:УТ, 1С:ЗУП жана 1С:Документооборот тутумдарында комплекстүү модулдарды киргизүү.</value>
+  </data>
+  <data name="CodeOptimization" xml:space="preserve">
+    <value>Кодду оптималдаштыруу</value>
+  </data>
+  <data name="1cOptimizationDesc" xml:space="preserve">
+    <value>Оор алгоритмдерди рефакторингдөө, СКД (маалыматтарды топтоо тутуму) отчетторун жана бизнес-процесстерди иштеп чыгуу.</value>
+  </data>
+  <data name="DevelopedProjects" xml:space="preserve">
+    <value>Мен иштеп чыккан реалдуу долбоорлор</value>
+  </data>
+  <data name="Integration1cNetTitle" xml:space="preserve">
+    <value>1С ↔ .NET Интеграциясы</value>
+  </data>
+  <data name="IntegrationMainDesc" xml:space="preserve">
+    <value>1С:УТ, 1С:ЗУП жана .NET ортосунда REST API жана жогорку жүктөмдүү маалымат алмашуу архитектурасын (Online/Offline) иштеп чыгуу. МББТ (СУБД) деңгээлинде оор сурамдарды оптималдаштыруу.</value>
   </data>
 </root>

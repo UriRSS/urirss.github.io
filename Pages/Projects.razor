@@ -2,42 +2,98 @@
 @inject IStringLocalizer<Lang> Loc
 
 <h1>@Loc["ProjectsTitle"]</h1>
-<p class="subtitle">Реальные проекты, которые я разработал</p>
+<p class="subtitle">@Loc["DevelopedProjects"]</p>
 
 <div class="project-grid">
+
     <div class="card">
-        <h3>🔄 1C ↔ .NET Интеграция</h3>
-        <p>REST API для синхронизации заказов между 1С:УТ и интернет-магазином</p>
-        <div class="tag-container"><span class="tag">1С</span><span class="tag">C#</span><span class="tag">RabbitMQ</span><span class="tag">PostgreSQL</span></div>
+        <h3>🖥️ @Loc["DescTitle"]</h3>
+        <p>@Loc["WpfMainDesc"]</p>
+        <ul>
+            <li><strong>@Loc["Interface"]:</strong> @Loc["WpfUiDesc"]</li>
+            <li><strong>@Loc["DataBinding"]:</strong> @Loc["WpfDataBindingDesc"]</li>
+        </ul>
+        <div class="tag-container">
+            <span class="tag">C# / WPF</span>
+            <span class="tag">windows forms c#</span>
+            <span class="tag">devexpress c#</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">PostgreSQL</span>
+        </div>
     </div>
 
     <div class="card">
-        <h3>💰 FinTech Платформа</h3>
-        <p>Микросервисная система для управления инвестиционными портфелями</p>
-        <div class="tag-container"><span class="tag">ASP.NET Core</span><span class="tag">Docker</span><span class="tag">Azure</span><span class="tag">Redis</span></div>
+        <h3>🌐 @Loc["FullstackWebTitle"]</h3>
+        <p>@Loc["FullstackMainDesc"]</p>
+        <ul>
+            <li><strong>@Loc["Frontend"]:</strong> @Loc["FrontendDesc"]</li>
+            <li><strong>@Loc["Backend"]:</strong> @Loc["BackendDesc"]</li>
+        </ul>
+        <div class="tag-container">
+            <span class="tag">Vue.js</span>
+            <span class="tag">C# / .NET</span>
+            <span class="tag">EF Core</span>
+            <span class="tag">REST API</span>
+        </div>
     </div>
 
     <div class="card">
-        <h3>📱 Flutter GPS Трекер</h3>
-        <p>Мобильное приложение для отслеживания местоположения с реальным временем</p>
-        <div class="tag-container"><span class="tag">Flutter</span><span class="tag">C#</span><span class="tag">SignalR</span><span class="tag">PostgreSQL</span></div>
+        <h3>📱@Loc["GpsTrackerTitle"]</h3>
+        <p>@Loc["GpsTrackerMainDesc"]</p>
+        <ul>
+            <li><strong>Offline-first:</strong> @Loc["OfflineFirstDesc"]</li>
+            <li><strong>@Loc["SmartSync"]:</strong> @Loc["SmartSyncDesc"]</li>
+        </ul>
+        <div class="tag-container">
+            <span class="tag">Flutter</span>
+            <span class="tag">C#</span>
+            <span class="tag">SignalR</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">sqlite</span>
+        </div>
     </div>
 
     <div class="card">
-        <h3>🖥️ Десктоп WPF Приложение</h3>
-        <p>Корпоративное приложение для управления складом</p>
-        <div class="tag-container"><span class="tag">WPF</span><span class="tag">C#</span><span class="tag">SQL Server</span></div>
+        <h3>📦 @Loc["MyWarehouseTitle"]</h3>
+        <p><strong>@Loc["ErpSystem"]</strong> @Loc["WarehouseAutomationDesc"]</p>
+        <ul>
+            <li><strong>@Loc["PurchasingTitle"]:</strong> @Loc["ProcurementDesc"]</li>
+            <li><strong>@Loc["Logistics"]:</strong> @Loc["LogisticsDesc"]</li>
+            <li><strong>@Loc["Security"]:</strong> @Loc["SecurityDesc"]</li>
+        </ul>
+        <div class="tag-container">
+            <span class="tag">C# / MVC</span>
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Azure</span>
+        </div>
     </div>
 
     <div class="card">
-        <h3>🧩 1С:ЗУП / УТ / Документооборот</h3>
-        <p>Внедрение и доработка модулей 1С для крупных предприятий</p>
-        <div class="tag-container"><span class="tag">1С</span><span class="tag">SQL</span><span class="tag">JavaScript</span></div>
+        <h3>🧩 @Loc["1cDevelopmentTitle"]</h3>
+        <p>@Loc["1cMainDesc"]</p>
+        <ul>
+            <li><strong>@Loc["AutomationContours"]:</strong> @Loc["1cModulesDesc"]</li>
+            <li><strong>@Loc["CodeOptimization"]:</strong> @Loc["1cOptimizationDesc"]</li>
+        </ul>
+        <div class="tag-container">
+            <span class="tag">1С:Предприятие</span>
+            <span class="tag">БСП</span>
+            <span class="tag">T-SQL / pgSQL</span>
+        </div>
     </div>
 
     <div class="card">
-        <h3>🌐 Vue.js + C# Веб-приложение</h3>
-        <p>SPA приложение с C# бэкендом и Vue фронтендом</p>
-        <div class="tag-container"><span class="tag">Vue.js</span><span class="tag">C#</span><span class="tag">EF Core</span><span class="tag">REST API</span></div>
+        <h3>🔄 @Loc["Integration1cNetTitle"]</h3>
+        <p>@Loc["IntegrationMainDesc"]</p>
+        <div class="tag-container">
+            <span class="tag">C# / .NET</span>
+            <span class="tag">EF Core / Dapper</span>
+            <span class="tag">SQL / Stored Procs</span>
+            <span class="tag">PostgreSQL / MS SQL</span>
+            <span class="tag">1С HTTP-сервисы</span>
+        </div>
     </div>
+
 </div>

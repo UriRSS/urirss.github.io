@@ -2,24 +2,30 @@
 @inject IStringLocalizer<Lang> Loc
 
 <h1>@Loc["AboutMe"]</h1>
-<p class="subtitle">Немного о моём пути в разработке</p>
+<p class="subtitle">@Loc["AboutMeSubtitle"]</p>
 
 <div class="card">
-    <h3>👨‍💻 Кто я</h3>
-    <p>
-        C# разработчик с 6-летним опытом. Специализируюсь на разработке бэкенд-систем,
-        интеграционных решениях между 1С и внешними сервисами, а также на оптимизации
-        производительности баз данных.
+    <h3>👨‍💻</h3>
+    <p style="line-height: 1.7; color: #94a3b8;">
+        @Loc["AboutMeMainText"]
+    </p>
+    <p style="line-height: 1.7; color: #94a3b8; margin-top: 12px;">
+        @Loc["AboutMeLogisticsText"]
+    </p>
+    <p style="line-height: 1.7; color: #94a3b8; margin-top: 12px;">
+        @Loc["AboutMeMobileText"]
     </p>
 </div>
-
 <div class="card">
-    <h3>🎓 Образование</h3>
-    <p><strong>МГТУ им. Баумана</strong> (2014–2018)</p>
-    <p style="color: #94a3b8;">Факультет информатики и систем управления</p>
+    <h3>🌐 @Loc["LanguagesTitle"]</h3>
+    <ul style="color: #94a3b8; line-height: 2; list-style-type: none; padding-left: 0; margin: 0;">
+        <li><span style="color: #38bdf8; font-weight: bold; margin-right: 8px;">✔</span><strong>@Loc["Kyrgyz"]</strong> — @Loc["LangNative"]</li>
+        <li><span style="color: #38bdf8; font-weight: bold; margin-right: 8px;">✔</span><strong>@Loc["Russian"]</strong> — @Loc["LangFluent"]</li>
+        <li><span style="color: #38bdf8; font-weight: bold; margin-right: 8px;">✔</span><strong>@Loc["Italian"]</strong> — @Loc["LangFluent"]</li>
+        <li><span style="color: #38bdf8; font-weight: bold; margin-right: 8px;">✔</span><strong>@Loc["English"]</strong> — @Loc["LangUpperInter"]</li>
+    </ul>
 </div>
-
-<div class="card">
+@* <div class="card">
     <h3>📜 Сертификаты</h3>
     <ul style="color: #94a3b8; line-height: 2;">
         <li>✔ Microsoft Certified: .NET Developer</li>
@@ -27,4 +33,4 @@
         <li>✔ 1С:Специалист (Бухгалтерия)</li>
         <li>✔ Azure Fundamentals</li>
     </ul>
-</div>
+</div> *@

@@ -123,8 +123,23 @@
   <data name="AboutMe" xml:space="preserve">
     <value>Обо мне</value>
   </data>
+  <data name="AboutMeLogisticsText" xml:space="preserve">
+    <value>Имею богатый практический опыт проектирования сквозных бизнес-цепочек для автоматизации логистики и складского учета крупных холдингов. Разрабатывал комплексные модули межфилиального перемещения ТМЦ с двухэтапной логикой: отгрузка товаров по внутренним ценам с сохранением остатков на балансе холдинга, автоматическая генерация транзитных черновиков прихода и их финальное оприходование на конечные склады филиалов. Для обеспечения безопасности процессов внедрял гибкие ролевые модели доступа (RBAC), разграничивающие права линейных сотрудников на уровне доступных им локаций.</value>
+  </data>
+  <data name="AboutMeMainText" xml:space="preserve">
+    <value>C# разработчик с 12-летним опытом глубокого погружения в enterprise-разработку. Специализируюсь на проектировании сложных бэкенд-систем, отказоустойчивых интеграционных решениях между экосистемой 1С и внешними сервисами, а также на глубокой оптимизации производительности реляционных баз данных. Обладаю редким навыком — детальным знанием внутренней структуры таблиц и СУБД конфигураций 1С (УТ, ЗУП, Документооборот), что позволяет мне вычислять таблицы и строить выборки напрямую через SQL-запросы в обход тяжелого стандартного синтаксиса платформы.</value>
+  </data>
+  <data name="AboutMeMobileText" xml:space="preserve">
+    <value>Помимо бэкенд-разработки, успешно проектирую клиент-серверные мобильные архитектуры на Flutter для автоматизации полевого персонала (торговые агенты, транспортная логистика). Специализируюсь на концепции Offline-first: реализовывал механизмы гарантированной доставки геоданных, при которых координаты буферизируются в локальной базе смартфона при отсутствии сети, пакетами уходят на сервер при восстановлении связи через SignalR / REST API, а затем валидируются флагом успешной отправки (send = true) и автоматически очищаются для предотвращения переполнения памяти устройств.</value>
+  </data>
+  <data name="AboutMeSubtitle" xml:space="preserve">
+    <value>Немного о моём пути в разработке</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Контакты</value>
+  </data>
+  <data name="ContactDirectly" xml:space="preserve">
+    <value>Связаться напрямую</value>
   </data>
   <data name="ContactMe" xml:space="preserve">
     <value>Связаться со мной</value>
@@ -150,11 +165,29 @@
   <data name="Home" xml:space="preserve">
     <value>Главная</value>
   </data>
+  <data name="Italian" xml:space="preserve">
+    <value>Италянский</value>
+  </data>
   <data name="Kyrgyz" xml:space="preserve">
     <value>Кыргызча</value>
   </data>
+  <data name="LangFluent" xml:space="preserve">
+    <value>Свободно</value>
+  </data>
+  <data name="LangNative" xml:space="preserve">
+    <value>Родной</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Язык</value>
+  </data>
+  <data name="LanguagesTitle" xml:space="preserve">
+    <value>Знание языков</value>
+  </data>
+  <data name="LangUpperInter" xml:space="preserve">
+    <value>выше среднего</value>
+  </data>
+  <data name="LetWorkTogether" xml:space="preserve">
+    <value>Давайте работать вместе!</value>
   </data>
   <data name="Message" xml:space="preserve">
     <value>Сообщение</value>
@@ -185,5 +218,110 @@
   </data>
   <data name="Title" xml:space="preserve">
     <value>Урмат Аликеев  | C# разработчик</value>
+  </data>
+  <data name="DescTitle" xml:space="preserve">
+    <value>Десктоп-приложение</value>
+  </data>
+  <data name="WpfMainDesc" xml:space="preserve">
+    <value>Корпоративный Windows-клиент для оперативного управления складскими процессами в реальном времени.</value>
+  </data>
+  <data name="Interface" xml:space="preserve">
+    <value>Интерфейс</value>
+  </data>
+  <data name="WpfUiDesc" xml:space="preserve">
+    <value>Разработка отзывчивого UI с использованием паттерна MVVM и кастомных стилей.</value>
+  </data>
+  <data name="WpfDataBindingDesc" xml:space="preserve">
+    <value>Оптимизация отображения больших списков товаров и динамического обновления данных.</value>
+  </data>
+  <data name="DataBinding" xml:space="preserve">
+    <value>Привязка данных</value>
+  </data>
+  <data name="FullstackWebTitle" xml:space="preserve">
+    <value>Fullstack Web-приложение</value>
+  </data>
+  <data name="FullstackMainDesc" xml:space="preserve">
+    <value>Современное SPA-приложение для автоматизации внутренних бизнес-процессов компании.</value>
+  </data>
+  <data name="Frontend" xml:space="preserve">
+    <value>Фронтенд</value>
+  </data>
+  <data name="FrontendDesc" xml:space="preserve">
+    <value>Реактивный и компонентный интерфейс на Vue.js с управлением состояниями.</value>
+  </data>
+  <data name="BackendDesc" xml:space="preserve">
+    <value>Отказоустойчивый REST API на C#, обеспечивающий быструю обработку запросов.</value>
+  </data>
+  <data name="Backend" xml:space="preserve">
+    <value>Бэкенд</value>
+  </data>
+  <data name="GpsTrackerTitle" xml:space="preserve">
+    <value>Flutter GPS-Трекер: Логистика</value>
+  </data>
+  <data name="GpsTrackerMainDesc" xml:space="preserve">
+    <value>Мобильное приложение для трекинга персонала и транспорта с акцентом на стабильность в зонах без связи.</value>
+  </data>
+  <data name="OfflineFirstDesc" xml:space="preserve">
+    <value>Накопление координат в локальной базе смартфона при отсутствии сети.</value>
+  </data>
+  <data name="SmartSync" xml:space="preserve">
+    <value>Smart-синхронизация</value>
+  </data>
+  <data name="SmartSyncDesc" xml:space="preserve">
+    <value>Пакетная отправка данных при появлении сети и автоочистка памяти.</value>
+  </data>
+  <data name="MyWarehouseTitle" xml:space="preserve">
+    <value>Мой склад</value>
+  </data>
+  <data name="ErpSystem" xml:space="preserve">
+    <value>ERP-система</value>
+  </data>
+  <data name="WarehouseAutomationDesc" xml:space="preserve">
+    <value>автоматизации складского учета, межфилиальной логистики и цепочек поставок.</value>
+  </data>
+  <data name="PurchasingTitle" xml:space="preserve">
+    <value>Закупки</value>
+  </data>
+  <data name="ProcurementDesc" xml:space="preserve">
+    <value>Сквозной цикл работы с поставщиками (заказ, статус «В пути», оприходование).</value>
+  </data>
+  <data name="Logistics" xml:space="preserve">
+    <value>Логистика</value>
+  </data>
+  <data name="LogisticsDesc" xml:space="preserve">
+    <value>Двухэтапное перемещение товаров холдинг ↔ филиалы по внутренним ценам.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Безопасность</value>
+  </data>
+  <data name="SecurityDesc" xml:space="preserve">
+    <value>Разграничение прав (RBAC) для управления продажами и складами.</value>
+  </data>
+  <data name="1cDevelopmentTitle" xml:space="preserve">
+    <value>Разработка и поддержка 1С</value>
+  </data>
+  <data name="1cMainDesc" xml:space="preserve">
+    <value>Проектирование архитектуры и глубокая доработка нетиповых конфигураций для крупных предприятий.</value>
+  </data>
+  <data name="Контуры автоматизации" xml:space="preserve">
+    <value>Контуры автоматизации</value>
+  </data>
+  <data name="1cModulesDesc" xml:space="preserve">
+    <value>Внедрение комплексных модулей в 1С:УТ, 1С:ЗУП и 1С:Документооборот.</value>
+  </data>
+  <data name="CodeOptimization" xml:space="preserve">
+    <value>Оптимизация кода</value>
+  </data>
+  <data name="1cOptimizationDesc" xml:space="preserve">
+    <value>Рефакторинг тяжелых алгоритмов, доработка СКД-отчетов и бизнес-процессов.</value>
+  </data>
+  <data name="DevelopedProjects" xml:space="preserve">
+    <value>Реальные проекты, которые я разработал</value>
+  </data>
+  <data name="Integration1cNetTitle" xml:space="preserve">
+    <value>1С ↔ .NET Интеграция</value>
+  </data>
+  <data name="IntegrationMainDesc" xml:space="preserve">
+    <value>Разработка REST API и архитектуры высоконагруженного обмена данными (Online/Offline) между 1С:УТ, 1С:ЗУП и .NET. Оптимизация тяжелых запросов на уровне СУБД.</value>
   </data>
 </root>
