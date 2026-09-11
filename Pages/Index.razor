@@ -1,0 +1,45 @@
+﻿@page "/"
+@inject IStringLocalizer<Lang> Loc
+
+<div class="hero">
+    <h1>@Loc["Hello"]</h1>
+    <p class="subtitle">@Loc["Developer"]</p>
+    <div class="btn-container">
+        <a href="/contact" class="btn">@Loc["ContactMe"]</a>
+        <a href="/projects" class="btn btn-outline">@Loc["ProjectsTitle"]</a>
+    </div>
+</div>
+
+<div class="card">
+    <h3>🚀 @Loc["TechStack"]</h3>
+    <div class="tag-container">
+        <span class="tag">C#</span>
+        <span class="tag">.NET Core</span>
+        <span class="tag">ASP.NET Core</span>
+        <span class="tag">Entity Framework</span>
+        <span class="tag">Blazor</span>
+        <span class="tag">1С:Предприятие</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Vue.js</span>
+        <span class="tag">Flutter</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Azure</span>
+        <span class="tag">REST API</span>
+        <span class="tag">WPF</span>
+        <span class="tag">Git</span>
+    </div>
+</div>
+
+<div class="card">
+    <h3>📊 @Loc["Experience"]</h3>
+    <p><strong>Старший разработчик</strong> | ООО "ТехноПро" (2021–н.в.)</p>
+    <p style="color: #94a3b8; margin: 8px 0 16px;">
+        Разработка интеграционных решений между 1С и .NET. Миграция legacy-систем на микросервисную архитектуру.
+    </p>
+
+    <p><strong>C# разработчик</strong> | ООО "СофтЛайн" (2018–2021)</p>
+    <p style="color: #94a3b8; margin: 8px 0 16px;">
+        Разработка ERP-систем на 1С. Написание HTTP-сервисов на ASP.NET Core. Оптимизация SQL-запросов.
+    </p>
+</div>

@@ -1,0 +1,159 @@
+﻿@page "/contact"
+
+@inject IStringLocalizer<Lang> Loc
+@inject HttpClient Http
+
+<h1>
+    @Loc["ContactMe"]
+</h1>
+
+<p class="subtitle">
+    Let's work together!
+</p>
+
+
+<div class="card">
+
+    <h3>
+        📬 @Loc["ContactMe"]
+    </h3>
+
+    <form @onsubmit="SendMessage">
+
+        <input type="text"
+               @bind="name"
+               placeholder="@Loc["Name"]"
+               required />
+
+        <input type="email"
+               @bind="email"
+               placeholder="@Loc["Email"]"
+               required />
+
+        <textarea @bind="message"
+                  rows="4"
+                  placeholder="@Loc["Message"]"
+                  required>
+        </textarea>
+
+        <button type="submit"
+                disabled="@isSending">
+
+            @(isSending
+                ? Loc["Sending"]
+                : Loc["Send"])
+
+        </button>
+
+        @if (!string.IsNullOrEmpty(response))
+        {
+            <p class="@(isSuccess
+                                        ? "success-message"
+                                        : "error-message")">
+
+                @response
+
+            </p>
+        }
+
+    </form>
+
+</div>
+
+
+<div class="card">
+
+    <h3>
+        📱 Связаться напрямую
+    </h3>
+
+    <div class="contact-links">
+
+        <a href="https://t.me/UrmatAlikeev"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            💬 Telegram
+
+        </a>
+
+        <a href="https://github.com/your_github"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            🐙 GitHub
+
+        </a>
+
+    </div>
+
+</div>
+
+
+@code {
+
+    private string name = "";
+
+    private string email = "";
+
+    private string message = "";
+
+    private string response = "";
+
+    private bool isSending = false;
+
+    private bool isSuccess = false;
+
+
+    private async Task SendMessage()
+    {
+        isSending = true;
+
+        response = "";
+
+
+        try
+        {
+            var data = new
+            {
+                Name = name,
+                Email = email,
+                Message = message
+            };
+
+
+            var result =
+                await Http.PostAsJsonAsync(
+                    "https://formspree.io/f/your_key",
+                    data);
+
+
+            if (result.IsSuccessStatusCode)
+            {
+                response = Loc["Success"];
+
+                isSuccess = true;
+
+                name = "";
+                email = "";
+                message = "";
+            }
+            else
+            {
+                response = Loc["Error"];
+
+                isSuccess = false;
+            }
+        }
+        catch
+        {
+            response =
+                "❌ " + Loc["Error"];
+
+            isSuccess = false;
+        }
+
+
+        isSending = false;
+    }
+}

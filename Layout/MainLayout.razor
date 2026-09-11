@@ -1,0 +1,243 @@
+﻿@inherits LayoutComponentBase
+
+@inject IStringLocalizer<Lang> Loc
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+@using System.Globalization
+
+<div class="page">
+
+    <div class="burger-menu"
+         @onclick="ToggleMobileMenu">
+        ☰
+    </div>
+
+    <div class="sidebar">
+
+        <nav class="nav">
+
+            <a href="/" class="nav-link">
+                🏠
+                <span class="nav-text">
+                    @Loc["Home"]
+                </span>
+            </a>
+
+            <a href="/projects" class="nav-link">
+                📁
+                <span class="nav-text">
+                    @Loc["Projects"]
+                </span>
+            </a>
+
+            <a href="/about" class="nav-link">
+                👤
+                <span class="nav-text">
+                    @Loc["About"]
+                </span>
+            </a>
+
+            <a href="/contact" class="nav-link">
+                ✉️
+                <span class="nav-text">
+                    @Loc["Contact"]
+                </span>
+            </a>
+
+        </nav>
+
+        <div class="language-selector">
+
+            <select @bind="selectedLanguage"
+                    @bind:after="ChangeLanguageAsync">
+
+                <option value="en">
+                    🇬🇧 English
+                </option>
+
+                <option value="ru">
+                    🇷🇺 Русский
+                </option>
+
+                <option value="ky">
+                    🇰🇬 Кыргызча
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="theme-toggle"
+             @onclick="ToggleTheme">
+
+            @(isDark ? "🌙" : "☀️")
+
+        </div>
+
+    </div>
+
+
+    <div class="mobile-nav"
+         style="display: @(isMobileMenuOpen ? "flex" : "none");">
+
+        <a href="/"
+           @onclick="CloseMobileMenu">
+            🏠 @Loc["Home"]
+        </a>
+
+        <a href="/projects"
+           @onclick="CloseMobileMenu">
+            📁 @Loc["Projects"]
+        </a>
+
+        <a href="/about"
+           @onclick="CloseMobileMenu">
+            👤 @Loc["About"]
+        </a>
+
+        <a href="/contact"
+           @onclick="CloseMobileMenu">
+            ✉️ @Loc["Contact"]
+        </a>
+
+        <div style="margin-top:20px;">
+
+            <select @bind="selectedLanguage"
+                    @bind:after="ChangeLanguageAsync"
+                    style="width:100%;
+                padding:12px;
+                background:var(--bg);
+                color:var(--text);
+                border:1px solid var(--border);
+                border-radius:8px;">
+
+                <option value="en">
+                    🇬🇧 English
+                </option>
+
+                <option value="ru">
+                    🇷🇺 Русский
+                </option>
+
+                <option value="ky">
+                    🇰🇬 Кыргызча
+                </option>
+
+            </select>
+
+        </div>
+
+        <div style="margin-top:20px;
+            text-align:center;">
+
+            <button class="btn"
+                    @onclick="ToggleTheme">
+
+                @(isDark
+                    ? "☀️ Light"
+                    : "🌙 Dark")
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <main class="main-content">
+
+        @Body
+
+    </main>
+
+</div>
+
+
+@code {
+
+    private string selectedLanguage =
+        CultureInfo.CurrentCulture
+            .TwoLetterISOLanguageName;
+
+    private bool isDark = true;
+
+    private bool isMobileMenuOpen = false;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var savedTheme =
+                await JS.InvokeAsync<string?>("theme.get");
+
+            isDark = savedTheme != "light";
+
+            await JS.InvokeVoidAsync(
+                "setTheme",
+                isDark ? "dark" : "light");
+        }
+        catch
+        {
+            isDark = true;
+        }
+    }
+
+
+    private async Task ChangeLanguageAsync()
+    {
+        await JS.InvokeVoidAsync(
+            "blazorCulture.set",
+            selectedLanguage);
+
+        var culture =
+            new CultureInfo(selectedLanguage);
+
+        CultureInfo.DefaultThreadCurrentCulture =
+            culture;
+
+        CultureInfo.DefaultThreadCurrentUICulture =
+            culture;
+
+        CultureInfo.CurrentCulture =
+            culture;
+
+        CultureInfo.CurrentUICulture =
+            culture;
+
+        Nav.NavigateTo(
+            Nav.Uri,
+            forceLoad: true);
+    }
+
+
+    private async Task ToggleTheme()
+    {
+        isDark = !isDark;
+
+        var theme =
+            isDark ? "dark" : "light";
+
+        await JS.InvokeVoidAsync(
+            "theme.set",
+            theme);
+
+        await JS.InvokeVoidAsync(
+            "setTheme",
+            theme);
+    }
+
+
+    private void ToggleMobileMenu()
+    {
+        isMobileMenuOpen =
+            !isMobileMenuOpen;
+    }
+
+
+    private void CloseMobileMenu()
+    {
+        isMobileMenuOpen = false;
+    }
+}
